@@ -10,7 +10,7 @@
 						<dt class="subttl">TEL</dt>
 						<dd><p><a class="btn tel" href="tel:0120949017"><img src="img/access_ico02.png" alt="" width="17" height="24">0120-949-017</a></p></dd>
 						<dt class="subttl">営業時間</dt>
-						<dd><p>10：00～23：00(定休日なし)</p></dd>
+						<dd><p>10：00～20：00(定休日なし)</p></dd>
 					</dl>
 				</dd>
 			</dl>
