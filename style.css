@@ -1,0 +1,914 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.ttf?-dpen52') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS Document */
+
+/*---------------------------------------------------*/
+/* 共通設定
+-----------------------------------------------------*/
+html{
+	font-size: 62.5%;}
+body {
+	font-size: 1.0rem;
+	color:#231815;
+	text-align:center;
+	line-height:1.5;
+	letter-spacing:0.05rem;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+
+html,body {height: 100%; }
+
+
+a {text-decoration:none;}
+
+img{
+	max-width: 100%;
+	height: auto;
+	width /***/:auto;
+	vertical-align:bottom; }
+
+#wrap{overflow:hidden;}
+
+/* Googleマップ */
+.googlemap {
+	width:95%;
+	margin:0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;}
+  .googlemap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;}
+
+/* 電話 */
+section a[href^="tel:"] {
+	position: relative;
+	padding-left:2.4rem;
+	font-size:2.2rem;
+	line-height:2.2rem;
+	text-decoration:none;
+	color:#E21919;}
+	section a[href^="tel:"]:after{
+		font-family: 'icomoon';
+		position: absolute;
+		content: "\e942";
+		top:0;
+		left:0;
+		}
+
+/* アクションポイント */
+article > aside{
+	padding:8px 0 16px;
+	background:#ffc;}
+	article > aside p{
+		width:95%;
+		font-size:1.6rem;
+		font-weight:bold;
+		text-align:center;
+		line-height:2.6rem;
+		margin:0 auto;}
+	article > aside a{
+		color:#fff;
+		font-size:2.0rem;
+		line-height:48px;
+		text-decoration:none;
+		display:block;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-box-shadow: 2px 2px 2px rgba(000,000,000,0.2);
+		-webkit-box-shadow: 2px 2px 2px rgba(000,000,000,0.2);
+		background: -moz-linear-gradient(top,#145dd4, #3e7ee6 50%,#145dd4 50%,#3e7ee6);
+	background: -webkit-gradient(linear, left top, left bottom, from(#145dd4), color-stop(0.5,#3e7ee6), color-stop(0.5,#145dd4), to(#3e7ee6));}
+	article > aside a:hover,
+	article > aside .hover{
+		opacity:0.8;
+		filter:alpha(opacity=80);
+		-ms-filter: "alpha( opacity=80 )";}
+
+
+/*---------------------------------------------------*/
+/* コンテンツ
+-----------------------------------------------------*/
+article{
+	font-size:1.4rem;}
+
+article h1{
+	text-align:left;
+	font-size:2.4rem;
+	line-height:1.4;
+	padding-left:0.8em;
+	margin-bottom:16px;
+	background:url(../images/h1_bg.jpg) no-repeat left center;}
+article h2{
+	text-align:left;
+	font-size:1.8rem;
+	padding:16px 2.5% 8px;
+	margin-bottom:8px;
+	border-bottom:1px solid #eeeeee;
+	background: url(../images/ttl_bg.gif) no-repeat left top,
+				-webkit-gradient(linear, left top, left bottom, from(#fff), to(#eeeeee));}
+article h3{
+	width:95%;
+	padding:4px 0;
+	font-size:1.6rem;
+	margin:0 auto 8px;
+	color:#fff;
+	border-radius:4px;        /* CSS3草案 */  
+	-webkit-border-radius:4px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius:4px;   /* Firefox用 */
+	background:#14508e;}
+article h4{
+	font-size:1.6rem;
+	font-weight:bold;
+	color:#14508e;
+	margin-bottom:8px;}
+
+/* 記事 */
+article{}
+	article a{
+		text-decoration:underline;}
+		article a:hover,
+		article .hover{
+			text-decoration:none;}
+		article h1 a,
+		article h2 a,
+		article h3 a{
+			display:block;
+			cursor:default;
+			text-decoration:none;}
+	article p,
+	article ul,
+	article ol,
+	article dl,
+	article table{
+		width:95%;
+		margin:0 auto 16px;
+		text-align:left;}
+	article dd{
+		margin-bottom:16px;}
+	article dt{
+		font-size:1.6rem;
+		margin-bottom:8px;}
+	article li{
+		margin-bottom:4px;}
+		article li ul {
+			padding-top:4px;
+			margin:0;}
+	section{
+		margin-bottom:24px;}
+
+/* 強調 */
+article strong{
+	color:#E21919;
+	font-size:1.6rem;}
+
+/* キャッチコピー */
+p.catch{
+	color:#14508e;
+	font-size:1.6rem;
+	font-weight:bold;
+	letter-spacing:0.1rem;}
+img.catch{
+	margin-bottom:8px;}
+
+/* ※ */
+p.aside,
+ul.aside li,
+span.aside,
+.aside span{
+	font-size:1.2rem;
+	color:#E21919;
+	position: relative;
+	padding-left:1.5rem;}
+	p.aside:before,
+	ul.aside li:before{
+		content:"※";
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+	span.aside:before,
+	.aside span:before{
+		content:"※";
+		position: absolute;
+		left: 0;
+		top: 0;
+		line-height:1.2rem;
+		}
+
+
+/* トップページ
+-----------------------------------------------------*/
+#toppage{}
+
+#toppage section{
+	margin:0;}
+
+/* スライド */
+#toppage .main{
+	text-align:center;
+	padding-bottom:8px;}
+	#toppage .main ul{
+		width:100%;}
+  		#toppage .main ul li{
+			text-align:center;
+			line-height:44px;
+			margin:0 1.0rem;}
+
+
+/* コンテンツメニュー */
+#toppage .service{
+	margin-bottom:10px;
+	border-bottom:8px solid #eeeeee;}
+	#toppage .service h2{
+		margin:0;}
+	#toppage article .service ul{
+		width:100%;
+		margin:0;}
+		#toppage .service ul li{
+			clear:both;
+			margin:0;
+			background:#fff;
+			border-bottom:1px solid #eeeeee;}
+				#toppage .service ul li:last-child {border:none;}
+		#toppage .service ul li a{
+			min-height:96px;
+			color:#222222;
+			display:block;
+			padding: 10px 1.0rem 10px 11.2rem; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+			position: relative; /* So the thumbnail is relative to this */
+			text-decoration:none;}
+				#toppage .service ul li a strong{
+					color:blue;
+					text-decoration:underline;}
+				#toppage .service ul li .hover strong,
+				#toppage .service ul li a:hover strong{
+					text-decoration:none;}
+				#toppage .service ul li .hover,
+				#toppage .service ul li a:hover{
+					color:#4e4e4e;}
+			#toppage .service ul li img{
+				width:96px;
+				float:left;
+				left: 0.8rem;
+				position: absolute;
+				top: 10px;}
+			#toppage .service ul li strong{
+				display:block;}
+	
+	
+/* お知らせ */
+article .info{}
+	article .info ul{
+		margin-bottom:8px;}
+		article .info li{
+			padding:8px 0;
+			margin:0;
+			border-bottom:1px solid #eeeeee;}
+				article .info li:last-child{
+					border-bottom:none;}
+			article .info li time,
+			article .info li a{
+				display:block;}
+
+
+/* サービス料金表
+-----------------------------------------------------*/
+#service{}
+
+#service section{
+	clear:both;}
+
+#service section h6,
+#service section h5,
+#service section h4{
+	text-align:left;
+	width:95%;
+	padding:4px 0;
+	margin:0 auto 8px;}
+	#service section h4{
+		color:#231815;
+		border-bottom:1px solid #ccc;}
+	#service section h5{
+		font-size:1.6rem;
+		font-weight:bold;
+		color:#14508e;
+		margin-bottom:0;}
+	#service section h6{
+		font-size:1.4rem;
+		font-weight:bold;
+		padding:4px 1.0rem;
+		border-radius:4px;        /* CSS3草案 */  
+		-webkit-border-radius:4px;    /* Safari,Google Chrome用 */  
+		-moz-border-radius:4px;   /* Firefox用 */
+		background:#eeeeee;}
+
+#service table{
+	border:1px solid #14508e;}
+	#service table th,
+	#service table td{
+		text-align:center;
+		padding:8px 1.0rem;
+		border-right:1px solid #ccc;}
+			#service table th:last-child,
+			#service table td:last-child{
+				border-right:none;}
+	#service table th{
+		background:#ffc;}
+		#service table th:nth-child(1){
+			}
+		#service table th:nth-child(2){
+			width:16%;}
+		#service table th:nth-child(3){
+			width:44%;}
+	#service table td{
+		border-top:1px solid #ccc;}
+		#service table td.not{
+			color:#dddddd;
+			background:#dddddd;}
+		#service table td strong{color:#231815;}
+
+/* 各機種へのリンク */
+#service ul.menu{
+	width:100%;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;}
+	#service ul.menu li{
+		width:50%;
+		position: relative;
+		margin:0;
+		float:left;
+		display:inline;}
+		#service ul.menu a{
+			text-decoration:none;
+			display:block;
+			line-height:44px;
+			padding:0 1.0rem 0 2.4rem;}
+			#service ul.menu a:hover,
+			#service ul.menu .hover{
+				background:#f2f2f2;}
+			#service ul.menu a.current{
+				background:#cef2ff;}
+			#service ul.menu a:after{
+				font-family: 'icomoon';
+				position: absolute;
+				content: "\e617";
+				top: 50%;
+				left:0.4rem;
+				margin-top: -22px;
+				color:#ccc;
+				font-size:2.0rem;
+				}
+				#service ul.menu a.current:after{
+					content: "\e615";
+					color:#bbbbbb;}
+	#service ul.menu:after {/* float解除 */
+		content: "";
+		display: block;
+		clear: both;}
+
+
+/* 修理の流れ
+-----------------------------------------------------*/
+#flow{}
+
+#flow div > section{
+	position: relative;
+	padding-bottom:40px;
+	margin-bottom:8px;}
+		#flow div > section:after{
+			font-family: 'icomoon';
+	  		position: absolute;
+			content: "\e605";
+			font-size:4.0rem;
+			line-height:normal;
+			color:#e21919;
+			bottom:0;
+			left:50%;
+			margin-left: -2.0rem;}
+		#flow div section:last-child{
+			padding-bottom:0;
+			margin-bottom:40px;}
+			#flow div section:last-child:after{
+				content:none;}
+
+
+/* 店舗情報
+-----------------------------------------------------*/
+#shop{}
+
+/* 詳細 */
+#shop .data{}
+#shop .data table{
+	border:1px solid #ccc;}
+	#shop .data table tr{
+		border-bottom:1px solid #ccc;}
+	#shop .data table th,
+	#shop .data table td{
+		display:block;
+		padding:8px 1.0rem;}
+	#shop .data table th{
+		text-align:center;
+		border-top:1px solid #ccc;
+		background:#eeeeee;}
+		#shop .data table th:first-child{ border:none;}
+	#shop .data table td{}
+		#shop .data table td a{
+			display:block;}
+
+#shop .googlemap{
+	margin-bottom:16px;}
+
+
+/* よくある質問
+-----------------------------------------------------*/
+#faq{}
+
+#faq dl{
+	width:100%;}
+	#faq dl dt,
+	#faq dl dd{
+		position: relative;
+		min-height:2.4rem;
+		padding-left:4.0rem;}
+		#faq dl dt:after,
+		#faq dl dd:after{
+			font-family: 'icomoon';
+			position: absolute;
+			font-size:3.2rem;
+			top:0;
+			left:0;
+			line-height:normal;
+			margin:-0.6rem 0 0 0.5rem;}
+	/* Q */
+	#faq dl dt{}
+		#faq dl dt:after{
+			color:#1960e2;
+			content: "\e600";}
+	/* A */
+	#faq dl dd{
+		padding:8px 1.0rem 8px 4.0rem;
+		background:#f2f2f2;
+		margin-bottom:32px;}
+		#faq dl dd:after{
+			color:#e23131;
+			content: "\e62d";
+			margin-top:4px;}
+
+
+/* キャンペーン
+-----------------------------------------------------*/
+#campaign{}
+
+#campaign h2{
+	padding:0;
+	border:none;
+	background:none;}
+
+/* 一覧 */
+#campaign .list h2{}
+	#campaign .list h2 a{
+		text-decoration:underline;}
+	#campaign .list h2 a:hover,
+	#campaign .list h2 .hover{
+		text-decoration:none;}
+
+#campaign .list section{
+	border-bottom:1px dotted #ccc;}
+		#campaign .list section:first-child{
+			padding-top:16px;
+			border-top:1px solid #ccc;}
+		#campaign .list section:last-child{
+			border-bottom:none;}
+	#campaign .list section h2{
+		text-align:center;
+		padding:0;
+		border:none;
+		background:none;}
+	#campaign .list section img{
+		margin-bottom:8px;}
+	#campaign .list section p{}
+	#campaign .list p a{
+		text-decoration:none;
+		color:#231815;}
+
+/* ボタン */
+#campaign p.btn{
+	text-align:center;}
+	#campaign p.btn a{
+		display:block;
+		color:#fff;
+		font-size:1.6rem;
+		font-weight:bold;
+		letter-spacing:0.15rem;
+		line-height:3.6rem;
+		border-radius:4px;        /* CSS3草案 */  
+		-webkit-border-radius:4px;    /* Safari,Google Chrome用 */  
+		-moz-border-radius:4px;   /* Firefox用 */
+		background: -moz-linear-gradient(top,#fbad05 0%,#fc6902);
+		background: -webkit-gradient(linear, left top, left bottom, from(#fbad05), to(#fc6902));}
+	#campaign .btn a:hover,
+	#campaign .btn .hover{
+		opacity:0.8;
+		filter:alpha(opacity=80);
+		-ms-filter: "alpha( opacity=80 )";}
+			
+/* 期間 */
+#campaign table{
+	border:1px solid #ccc;}
+	#campaign table th,
+	#campaign table td{
+		display:block;
+		padding:8px 1.0rem;}
+	#campaign table td{}
+		#campaign table td span{
+			display:inline-block;
+			line-height:normal;}
+	#campaign table th{
+		text-align:center;
+		background:#eeeeee;}
+
+
+/* トピックス
+-----------------------------------------------------*/
+#topics{}
+
+#topics table{
+	border:1px solid #ccc;}
+	#topics table tr{
+		border-bottom:1px solid #ccc;}
+	#topics table th,
+	#topics table td{
+		padding:8px 1.0rem;
+		display:block;}
+	#topics table th{
+		text-align:center;
+		border-top:1px solid #ccc;
+		background:#eeeeee;}
+		#topics table th:first-child{ border:none;}
+	#topics table td{}
+
+#topics dl{}
+  #topics dl dt{
+	  margin-bottom:0;}
+  #topics dl dd{
+	  padding-bottom:16px;
+	  border-bottom:1px dashed #ccc;}
+  
+
+
+/* common
+-----------------------------------------------------*/
+#common{}
+
+#common table{
+	border:1px solid #ccc;}
+	#common table tr{
+		border-bottom:1px solid #ccc;}
+	#common table th,
+	#common table td{
+		padding:8px 1.0rem;
+		display:block;}
+	#common table th{
+		text-align:center;
+		border-top:1px solid #ccc;
+		background:#eeeeee;}
+		#common table th:first-child{ border:none;}
+	#common table td{}
+
+#container #common ol{
+	width:auto;
+	margin-right:4px;
+	text-align:left;
+	padding-left:3.6rem;}
+	#container #common ol ol{
+		margin-right:0;
+		list-style:lower-alpha;
+		padding:4px 0 0 2.4rem;
+		}
+
+#container #common ul{
+	width:auto;
+	padding-left:3.2rem;
+	list-style:circle;}
+	#container #common ul ul{
+		list-style:disc;
+		padding-left:1.8rem;}
+
+
+/*---------------------------------------------------*/
+/* ヘッダー
+-----------------------------------------------------*/
+header{}
+
+/* タブ
+-----------------------------------------------------*/
+#tab{
+	font-size:1.3rem;
+	background:#EEEEEE;}
+
+#tab ul{
+	height:30px;
+	overflow:hidden;
+	padding-top:0.6em;
+	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+	border-bottom:4px solid #164F8E;}
+	#tab ul li{
+		position: relative;
+		width:32%;
+		text-align:center;
+		display:inline-block;
+		*display: inline; *zoom: 1;
+		letter-spacing: normal;  /* 文字間を通常に戻す */
+		padding:0 0.24em;
+		box-sizing:border-box;
+		overflow:hidden;
+		vertical-align:bottom;}
+		#tab ul li a{
+			display:block;
+			line-height:30px;
+			color:#fff;
+			font-weight:bold;
+			letter-spacing:0.15rem;
+			border-radius: 4px 4px 0 0;        /* CSS3草案 */  
+			-webkit-border-radius: 4px 4px 0 0;    /* Safari,Google Chrome用 */  
+			-moz-border-radius: 4px 4px 0 0;   /* Firefox用 */
+			background:#BBBBBB;
+			}
+			#tab ul li a:after{
+				position: absolute;
+				font-family: 'icomoon';
+				top: 50%;
+				left: 0.6rem;
+				margin-top: -1.4rem;}
+			
+		/* tab rollover */
+		    #tab a:hover {
+				background:#164F8E;}
+		
+		/* tab current */
+		    #tab .current a{
+				color:#fff;
+				background:#164F8E;} 
+  
+
+/* ロゴ
+-----------------------------------------------------*/
+#logo{
+	width:100%;
+	max-width:515px;
+	margin:0 auto;
+	background:url(../images/logo.jpg) no-repeat center center;
+	background-size:90% auto;}
+	#logo a{
+		display:block;
+		height:48px;
+		text-indent:-9999px;}
+
+
+/* プライマリーナビゲーション
+-----------------------------------------------------*/
+#pnav{
+	height:44px;
+	background: -moz-linear-gradient(top,#fff 0%,#eeeeee);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eeeeee));
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;}
+
+	#pnav li{
+		position: relative;
+		width:33%;
+		line-height:44px;
+		float:left;
+		display:inline;
+		font-size:1.3rem;
+		letter-spacing:0.1rem;
+		text-align:left;}
+		#pnav li a{
+			display:block;
+			color:#231815;
+			padding-left:3.6rem;
+			border-right:1px solid #eeeeee;
+			border-left:1px solid #fff;}
+			#pnav li a:after{
+				position: absolute;
+				font-family: 'icomoon';
+				font-size:2.4rem;
+				color:#14508e;
+				top:0;
+				left:0.8rem;}
+			#pnav li a:hover,
+			#pnav li .hover{
+				background: -moz-linear-gradient(top,#f2f2f2 0%,#fff);
+				background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#fff));}
+
+/* 買取査定 */
+#pnav li.repair{
+	width:34%;}
+#pnav li.repair a:after{content: "\e603";}
+/* 店舗情報 */
+#pnav li.shop a:after{content: "\e602";}
+/* メニュー */
+#pnav li.menu a:after{content: "\e601";}
+
+
+
+/* グローバルナビゲーション
+-----------------------------------------------------*/
+nav {
+	clear:both;
+	font-size:1.6rem;
+	background:#14508e;}
+
+nav ul{}
+	nav ul li{
+		position: relative;
+		text-align:left;
+		border-bottom:1px solid #39699a;}
+			nav ul li:last-child{
+				border:none;}
+		nav ul li a{
+			width:100%;
+			padding:0 1.0rem;
+			line-height:48px;
+			display:block;
+			vertical-align:middle;
+			color:#fff;}
+			nav ul li a:after{
+				position: absolute;
+				font-family: 'icomoon';
+				content: "\e617";
+				top: 50%;
+				right: 8px;
+				margin-top: -2.0rem;
+				font-size:2.4rem;
+				color:#ccc;}
+			nav ul li a:hover,
+			nav ul li .hover{
+				background:#2b6199;}
+
+
+/* パンくずリスト
+-----------------------------------------------------*/
+#pan{
+	font-size:1.2rem;
+	width:95%;
+	color:#14508e;
+	text-align:left;
+	margin:0 auto 8px;
+	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */}
+	#pan li{
+		margin-right:8px;
+		display:inline-block;
+		*display: inline; *zoom: 1;
+		letter-spacing: normal; /* 文字間を通常に戻す */}
+	#pan a{
+		line-height:30px;
+		color:#14508e;
+		text-decoration:underline;}
+		#pan li:after{
+			content:">";
+			margin-left:8px;}
+		#pan li:last-child:after{
+			content:none;}
+
+
+/*---------------------------------------------------*/
+/* フッター
+-----------------------------------------------------*/
+footer{}
+
+
+/* PEGE TOP
+-----------------------------------------------------*/
+#pagetop{
+	font-size:1.2rem;
+	border-top:8px solid #eeeeee;}
+	#pagetop a{
+		position: relative;
+		display:block;
+		padding:26px 0 12px;
+		line-height:normal;
+		color:#222222;}
+		#pagetop a:after{
+			position: absolute;
+			font-family: 'icomoon';
+			content: "\e620";
+			top: 4px;
+			right: 50%;
+			margin-right: -1.4rem;
+			font-size:2.8rem;
+			color:#14508e;}
+		#pagetop a:hover,
+		#pagetop .hover{
+			opacity:0.8;
+			filter:alpha(opacity=80);
+			-ms-filter: "alpha( opacity=80 )";
+			background:none!important; }
+
+/* フッターナビゲーション
+-----------------------------------------------------*/
+#fnav {
+	font-size:1.6rem;
+	background:#eeeeee;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;}
+
+	#fnav li{
+		position: relative;
+		text-align:left;
+		border-bottom:1px solid #fff;}
+			#fnav li:last-child{
+				border:none;}
+		#fnav li a{
+			width:100%;
+			padding:0 1.0rem;
+			line-height:48px;
+			display:block;
+			vertical-align:middle;
+			color:#222222;}
+			#fnav li a:after{
+				font-family: 'icomoon';
+				position: absolute;
+				content: "\e617";
+				top: 50%;
+				right: 8px;
+				margin-top: -2.0rem;
+				font-size:2.4rem;
+				}
+			#fnav li a:hover,
+			#fnav li .hover{
+				background:#fff;}
+
+
+
+
+/* フッターメニュー
+-----------------------------------------------------*/
+#foot{
+	font-size:1.2rem;
+	margin-bottom:8px;}
+
+#foot ul{overflow:auto; zoom:1;/* float解除 */}
+	#foot ul li{
+		position: relative;
+		text-align:left;
+		line-height:44px;
+		width:50%;
+		float:left;
+		display:inline;}
+			#foot li:after{
+				font-family: 'icomoon';
+				position: absolute;
+				content: "\e617";
+				top: 50%;
+				left: 8px;
+				margin-top: -2.2rem;
+				font-size:2.0rem;
+				color:#aaaaaa;}
+		#foot ul li a{
+			color:#231815;
+			display:block;
+			padding:0 1.0rem 0 2.8rem;}
+			#foot ul li a:hover,
+			#foot ul li .hover{
+				text-decoration:underline;}
+				
+				
+/* SNSボタン
+-----------------------------------------------------*/
+#sns{
+	margin:0 1.0rem 8px;}
+
+#sns ul{overflow:auto; zoom:1;/* float解除 */}
+	#sns ul li{
+		float:left;
+		display:inline;
+		margin-right:1.5rem;}
+		#sns ul li img{
+			width:24px;
+			height:24px;}
+		#sns ul li a{
+			display:block;}
+
+
+	
+/* コピーライト
+-----------------------------------------------------*/
+#copy{
+	clear:both;
+	color:#ccc;
+	padding:8px 0;
+	letter-spacing:0.12em;
+	background:#231815;}
